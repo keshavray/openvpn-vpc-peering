@@ -1,7 +1,0 @@
-access_key = ""
-secret_key = ""
-cidr_block = ""
-instance_type = ""
-key_name = ""
-openvpn_username = ""
-openvpn_password = ""
