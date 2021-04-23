@@ -59,7 +59,7 @@ resource "aws_internet_gateway" "gateway1" {
 }
 
 resource "aws_instance" "openvpn" {
-  ami           = "ami-029cb972e1b8a4bca"
+  ami           = var.ami
   instance_type = var.instance_type
   ebs_optimized = false
   key_name      = var.key_name
