@@ -1,8 +1,3 @@
-provider "aws" {
-  region     = "ap-south-1"
-  access_key = var.access_key
-  secret_key = var.secret_key
-}
 
 resource "aws_vpc" "bar" {
   cidr_block = "10.2.0.0/16"
@@ -118,16 +113,9 @@ resource "aws_security_group" "openvpn-sg" {
   }
 
   ingress {
-    from_port   = 53
-    to_port     = 53
+    from_port   = 945
+    to_port     = 945
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  ingress {
-    from_port   = 53
-    to_port     = 53
-    protocol    = "udp"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
