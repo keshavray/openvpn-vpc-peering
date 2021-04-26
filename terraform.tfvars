@@ -1,5 +1,3 @@
-access_key = ""
-secret_key = ""
 cidr_block = ""
 instance_type = ""
 key_name = ""
